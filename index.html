@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+		<link rel="stylesheet" type='text/css' href="css/my.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class='preview'>
+					<h1>Responsive Web Design</h1>
+					<h2>Flexbox. CSS Grid Layout. CSS Recipes & Layouts</h2>
+					<p>Ilia Okunev</p>
+				</section>
+				<section class='list-event'>
+					<h2>What is Responsive Web Design?</h2>
+					<p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones)</p>
+				</section>
+				<section class='flex'>
+					<section class='flex-all-simple'>
+							<h2>Flexbox</h2>
+							<p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</p>
+							<h3>The flex container properties are:</h3></br>
+							<ul>
+								<li>flex-direction</li>
+								<li>flex-wrap</li>
+								<li>flex-flow</li>
+								<li>justify-content</li>
+								<li>align-items</li>
+								<li>align-content</li>
+							</ul>			
+					</section>
+<!-- Flex properties -->
+						<section class='flex-property'>
+							<h2>Flexbox</h2>
+							<h3>The flex-direction Property</h3></br>
+							<p>The flex-direction property defines in which direction the container wants to stack the flex items.</p></br>
+							<img src='./img/flex-directio.PNG'>
+						</section>
+						<section class='flex-property'>
+							<h2>Flexbox</h2>
+							<h3>The flex-wrap Property</h3></br>
+							<p>The flex-wrap property specifies whether the flex items should wrap or not.</p></br>
+							<img src='./img/flex-wrap.PNG'>
+						</section>
+						<section class='flex-property'>
+							<h2>Flexbox</h2>
+							<h3>The flex-flow Property</h3></br>
+							<p>The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.</p></br>
+							<img src='./img/flex-flow.PNG'>
+						</section>
+						<section class='flex-property'>
+							<h2>Flexbox</h2>
+							<h3>The justify-content Property</h3></br>
+							<p>The justify-content property is used to align the flex items.</p></br>
+							<img src='./img/jc.PNG'>
+						</section>
+						<section class='flex-property'>
+							<h2>Flexbox</h2>
+							<h3>The align-items Property</h3></br>
+							<p>The align-items property is used to align the flex items vertically.</p></br>
+							<img src='./img/ai.PNG'>
+						</section>
+						<section class='flex-property'>
+							<h2>Flexbox</h2>
+							<h3>The align-content Property</h3></br>
+							<p>The align-content property is used to align the flex lines.</p></br>
+							<img src='./img/ac.PNG'>
+						</section>
+<!-- End Flex properties -->
+
+						<section class='flex-coordinate'>
+							<h2>Flexbox</h2>
+							<p>There are some other properties which help to make responsive web and help to solve common problems like perfect centering, responsive image gallery, responsive and light web sites</p>
+						</section>
+				</section>
+<!-- Flex to Grid -->
+				<section class='gridL'>
+					<section class='gridL-preview'>
+						<h2>Grid Layout</h2>
+						<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</br>
+						A grid layout consists of a parent element, with one or more child elements.</p>
+						<img src='./img/grid-layout.PNG'>
+					</section>
+					<section class='gridL-preview'>
+						<h2>Grid Layout</h2>
+						<h3>Display Property</h3>
+						<p>An HTML element becomes a grid container by setting the display property to grid or inline-grid.
+						All direct children of the grid container automatically become grid items.</p>
+						<img src='./img/display-grid.PNG'>
+					</section>
+					<section class='gridL-preview'>
+							<h2>Grid Layout</h2>
+							<h3>The grid-column Property.</h3>
+							<p>The grid-column property to specify where to place an item. Item1 will start on column-line 1 and end on column-line 5</p>
+							<img src='./img/grid-column.PNG'>
+						</section>
+						<section class='gridL-preview'>
+								<h2>Grid Layout</h2>
+								<h3>The grid-row Property.</h3>
+								<p>the grid-row property to specify where to place an item.
+										Item1 will start on row-line 1 and end on row-line 4.</p>
+								<img src='./img/grid-row.PNG'>	
+						</section>
+						<section class='gridL-preview'>
+								<h2>Grid Layout</h2>
+								<h3>The grid-area Property.</h3>
+								<p>The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties. Item8 will start on row-line 1 and column-line 2, and end on row-line 5 column-line 6</p>
+								<img src='./img/grid-area.PNG'>	
+						</section>
+				</section>
+<!-- Grid to Recipies -->
+				<section class='recipes'>
+					<section class='recipes-preview'>
+						<h2>The Recipes</h2>
+						<p>The recipes are common layout patterns, things you might need to implement in your own sites.</p>
+						<ul>
+							<li>Media Objects</li>
+							<li>Columns</li>
+							<li>Center an element</li>
+							<li>Sticky footers</li>
+							<li>Split Navigation</li>
+							<li>Breadcrumb Navigation</li>
+						</ul>
+					</section>
+					<section class='recipes-preview'>
+							<h2>The Recipes</h2>
+							<h3>Media Objects</h3>
+							<p>Refers to a two-column box with an image on one side and descriptive text on the other.</p>
+							<img src='./img/media-object.PNG'>
+							<p>CSS Grid, float fallback.</p>
+					</section>
+					<section class='recipes-preview'>
+							<h2>The Recipes</h2>
+							<h3>Columns</h3>
+							<p>Lining items up in rows and columns.</p>
+							<img src='./img/columns.PNG'>
+							<p>CSS Grid</p>
+					</section>
+					<section class='recipes-preview'>
+							<h2>The Recipes</h2>
+							<h3>Center an element</h3>
+							<p>How to center an item horizontally and vertically?</p>
+							<img src='./img/center.PNG'>
+							<p>Flexbox.</p>
+					</section>
+					<section class='recipes-preview'>
+							<h2>The Recipes</h2>
+							<h3>Sticky footers</h3>
+							<p>Creating a footer which sits at the bottom of the container or viewport when the content is shorter.</p>
+							<img src='./img/sticky.PNG'>
+							<p>CSS Grid, Flexbox</p>
+					</section>
+					<section class='recipes-preview'>
+							<h2>The Recipes</h2>
+							<h3>Split Navigation</h3>
+							<p>A navigation pattern where some links are visually separated from the others.</p>
+							<img src='./img/navi.PNG'>
+							<p>Flexbox, margin</p>
+					</section>
+					<section class='recipes-preview'>
+							<h2>The Recipes</h2>
+							<h3>Breadcrumb Navigation</h3>
+							<p>Creating a list of links to allow the visitor to navigate back up through the page hierarchy.</p>
+							<img src='./img/navi2.PNG'>
+							<p>Flexbox</p>
+					</section>
+				</section>
+<!-- Recipies to the end -->
+				<section class='end'>
+					<h1> Thanks for watching</h1>
+				</section>	
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
